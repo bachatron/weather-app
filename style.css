@@ -1,0 +1,42 @@
+
+*{
+    border: 1px solid red;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+#city {
+    grid-column: span 2 / span 2;
+}
+
+#time {
+    grid-row-start: 2;
+}
+
+#timezone {
+    grid-row-start: 2;
+}
+
+#currenttemp {
+    grid-column: span 2 / span 2;
+    grid-row-start: 3;
+}
+
+#mintemp {
+    grid-row-start: 4;
+}
+
+#maxtemp {
+    grid-row-start: 4;
+}
+
+#description {
+    grid-column: span 2 / span 2;
+    grid-row-start: 5;
+}
+        
