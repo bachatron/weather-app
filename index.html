@@ -8,12 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="searchInput" placeholder="Search...">
+    <form id="form" role="search">
+        <input type="search" id="query" name="q"
+         placeholder="Put your city name or zip code."
+         aria-label="Write here your city name or zip code.">
+        <button>Search</button>
+      </form>
+      <button id="metric" onclick="changeMetric()">C</button>
     <div id="container">
         <div id="city" class="weather-info"><span></span></div>
         <div id="time" class="weather-info">Time: <span></span></div>
-        <div id="timezone" class="weather-info">Timezone: <span></span></div>
-        <div id="currenttemp" class="weather-info"><span></span></div>
+        <div id="timezone" class="weather-info">GMT <span></span></div>
+        <div id="actualtemp" class="weather-info"><span></span></div>
         <div id="mintemp" class="weather-info">Min temp: <span></span></div>
         <div id="maxtemp" class="weather-info">Max temp: <span></span></div>
         <div id="description" class="weather-info"><span></span></div>

@@ -1,10 +1,9 @@
-
-*{
+#container > * {
     border: 1px solid red;
 }
 
 #container {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
@@ -22,7 +21,7 @@
     grid-row-start: 2;
 }
 
-#currenttemp {
+#actualtemp {
     grid-column: span 2 / span 2;
     grid-row-start: 3;
 }
