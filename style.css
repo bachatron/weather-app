@@ -1,16 +1,24 @@
 #container > * {
-    border: 1px solid red;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
 }
 
 #container {
     display: none;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 8px;
+    width: 300px;
+    background: rgb(0,22,68);
+    background: linear-gradient(180deg, rgba(0,22,68,1) 0%, rgba(16,78,149,1) 46%, rgba(0,177,222,1) 100%); 
+    color: white;
+    border-radius: 2%;
 }
     
 #city {
     grid-column: span 2 / span 2;
+    font-weight: bold;
+    font-size: large;
 }
 
 #time {
@@ -39,3 +47,13 @@
     grid-row-start: 5;
 }
         
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+  }
